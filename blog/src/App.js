@@ -1,7 +1,7 @@
 import Navbar from './components/navbar.js';
 //import SampleText from './pages/sample.js';
 import Container from '@mui/material/Container';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Blog from './pages/blog/blog.js';
 import About from './pages/about/about.js';
 import PageNotFound from './pages/pageNotFound/pageNotFound.js';
@@ -19,7 +19,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="*" element={<PageNotFound />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
       </Container>
     </div>
   );
