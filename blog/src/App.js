@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/navbar.js';
+//import SampleText from './pages/sample.js';
+import Container from '@mui/material/Container';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Blog from './pages/blog/blog.js';
+import About from './pages/about/about.js';
+import PageNotFound from './pages/pageNotFound/pageNotFound.js';
+//import CustomTabPanel from './components/tablist.js'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Container maxWidth={false} style={{ padding: 0 }}>
+    <BrowserRouter>
+    <Navbar/>
+    <Routes>
+          <Route path="blog" element={<Blog />}/>
+          <Route path="about" element={<About />} />
+          <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </BrowserRouter>
+      </Container>
     </div>
   );
 }
