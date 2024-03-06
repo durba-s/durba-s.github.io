@@ -1,9 +1,9 @@
 import * as React from 'react';
 import StyledContainer from '../../components/styled-container';
 
-export default function Blog() {
+export default function Blog({darkMode}) {
   return (
-    <StyledContainer>
+    <StyledContainer darkMode={darkMode}>
       <h1>Blog</h1>
     </StyledContainer>
   );
