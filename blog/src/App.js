@@ -14,6 +14,7 @@ function App() {
     <BrowserRouter>
     <Navbar/>
     <Routes>
+          <Route path="/" element={<Blog />}/>
           <Route path="blog" element={<Blog />}/>
           <Route path="about" element={<About />} />
           <Route path="*" element={<PageNotFound />} />
