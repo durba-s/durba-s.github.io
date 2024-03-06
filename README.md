@@ -1,2 +1,2 @@
 #### Github pages
-Built using react app
+Built using react
