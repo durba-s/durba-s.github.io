@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
     <Container maxWidth={false} style={{ padding: 0 }}>
-    <BrowserRouter basename="/">
+    <HashRouter>
     <Navbar/>
     <Routes>
           <Route path="/" element={<Blog />}/>
