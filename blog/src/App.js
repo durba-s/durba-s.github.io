@@ -15,8 +15,8 @@ function App() {
     <Navbar/>
     <Routes>
           <Route path="/" element={<Blog />}/>
-          <Route path="blog" element={<Blog />}/>
-          <Route path="about" element={<About />} />
+          <Route path="/blog" element={<Blog />}/>
+          <Route path="/about" element={<About />} />
           <Route path="*" element={<PageNotFound />} />
       </Routes>
     </HashRouter>

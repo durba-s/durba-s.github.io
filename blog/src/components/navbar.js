@@ -10,10 +10,9 @@ import Box from '@mui/material/Box';
 import { useNavigate } from 'react-router-dom';
 
 function Navbar() {
-  const currentValue = window.location.pathname === "/" ? "blog" : window.location.pathname.split('/')[2]
-  const [value, setValue] = React.useState(currentValue);
+  const currpath = window.location.href.toString().includes('about') ? 'about' : 'blog';
+  const [value, setValue] = React.useState(currpath);
   const navigate = useNavigate()
-
   const handleChange = (event, newValue) => {
     navigate(newValue)
     setValue(newValue)
