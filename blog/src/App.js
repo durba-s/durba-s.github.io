@@ -2,8 +2,8 @@ import Navbar from './components/navbar.js';
 //import SampleText from './pages/sample.js';
 import Container from '@mui/material/Container';
 import { HashRouter, Routes, Route } from "react-router-dom";
-import Blog from './pages/blog/blog.js';
-import About from './pages/about/about.js';
+import Blog from './pages/Blog/blog.js';
+import About from './pages/About/about.js';
 import PageNotFound from './pages/pageNotFound/pageNotFound.js';
 import { ThemeProvider } from '@mui/material/styles';
 import { lightTheme, darkTheme } from './theme';
@@ -26,9 +26,9 @@ function App() {
     <HashRouter>
     <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
     <Routes>
-          <Route path="/" element={<Blog darkMode={darkMode}/>}/>
-          <Route path="/blog" element={<Blog darkMode={darkMode}/>}/>
+          <Route path="/" element={<About darkMode={darkMode}/>}/>
           <Route path="/about" element={<About darkMode={darkMode}/>} />
+          <Route path="/blog" element={<Blog darkMode={darkMode}/>}/>
           <Route path="*" element={<PageNotFound darkMode={darkMode}/>} />
       </Routes>
     </HashRouter>

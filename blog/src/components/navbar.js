@@ -13,7 +13,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import { lightTheme, darkTheme } from '../theme';
 
 function Navbar({ darkMode, toggleDarkMode }) {
-  const currpath = window.location.href.toString().includes('about') ? 'about' : 'blog';
+  const currpath = window.location.href.toString().includes('blog') ? 'blog' : 'about';
   const [value, setValue] = React.useState(currpath);
   const navigate = useNavigate();
 
@@ -50,8 +50,8 @@ function Navbar({ darkMode, toggleDarkMode }) {
                       textColor='secondary'
                       variant='fullWidth'
                       >
-                      <Tab value="blog" label="Blog"/>
                       <Tab value="about" label="About" />
+                      <Tab value="blog" label="Blog"/>
                   </Tabs>
                 </Box>
               </Grid>
