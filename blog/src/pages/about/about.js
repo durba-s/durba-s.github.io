@@ -111,7 +111,7 @@ export default function About({ darkMode }) {
             <div style={styles.sectionTitle}>Experience</div>
 
             <div style={{ marginBottom: 10 }}>
-              <div style={{ fontWeight: 700 }}>Microsoft R & D</div>
+              <div style={{ fontWeight: 700 }}>Microsoft AI</div>
               <div style={styles.meta}>Data Scientist 2 · Sept 2025 – Present | Data Scientist · Jul 2023 – Aug 2025</div>
               <ul style={styles.list}>
                 <li>Bing Ads: Contextual bandit and RL-based ranking/allocation policies for sponsored search; and whole page optimization.</li>
