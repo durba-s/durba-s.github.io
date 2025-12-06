@@ -2,7 +2,7 @@ export default {
   slug: "bias-variance-tradeoff",
   category: "Machine Learning",
   title: "Bias–Variance Tradeoff Explained",
-  date: "2025-12-04",
+  date: "2024-11-04",
   excerpt:
     "An intuitive and mathematical deep-dive into the Bias–Variance Tradeoff, explaining how model complexity, noise, and data variability affect learning performance.",
   content: `

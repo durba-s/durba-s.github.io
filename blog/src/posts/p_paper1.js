@@ -2,7 +2,7 @@ export default {
   slug: "matryoshka-learning",
   category: "Literature Review",
   title: "Understanding Matryoshka Representations",
-  date: "2025-12-04",
+  date: "2025-05-04",
   excerpt:
     "A deep, intuitive walkthrough of the Matryoshka Representation Learning paper (arXiv:2205.13147), combining equations, theory, and practical PyTorch code examples.",
   content: `

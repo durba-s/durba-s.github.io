@@ -2,7 +2,7 @@ export default {
   slug: "machine-learning-loss-functions",
   category: "Machine Learning",
   title: "The Cost of Being Wrong: A Deep Dive into Loss Functions and Gradients",
-  date: "2025-12-05",
+  date: "2023-11-05",
   excerpt:
     "A complete guide to loss functions in machine learning: definitions, gradients, advantages, disadvantages, and applications across regression and classification tasks.",
   content: `

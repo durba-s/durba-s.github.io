@@ -2,7 +2,7 @@ export default {
   slug: "activation-functions",
   category: "Machine Learning",
   title: "Activation Functions: Breathing Non-Linearity into Neural Networks",
-  date: "2025-12-06",
+  date: "2023-11-06",
   excerpt:
     "A deeply intuitive and mathematically grounded walkthrough of activation functions—how they behave, why they matter, and what roles they play in modern deep learning.",
   content: `
