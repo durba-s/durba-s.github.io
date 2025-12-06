@@ -22,27 +22,26 @@ Whether you're training a linear regressor or a massive neural network, the beha
 For example, predicting house prices is a common real-world machine learning problem, but it’s far from simple.  
 Each house has features like size, number of bedrooms, location, and age—but many other factors also influence its price like Market trends and seasonal fluctuations, Neighborhood popularity and Random events like sudden renovations or urgent sales
 
-1. **A house-price model is too simple → Underfits**
+1. Suppose, a house-price model is too simple and is not able to predict well. This is a classic case of underfitting.
+For example,  using a straight-line model to predict house prices based on size alone. 
 
-Imagine using a straight-line model to predict house prices based on size alone.  
 It cannot capture more complex relationships, like how location or age interacts with size.
-
+Following are some indicators of underfitting:
 - Predictions are consistently off  
 - The model has **high bias**
 
-2. **A deep learning model memorizes training data → Overfits**
+2. If a deep learning model memorizes training data, then it is the case of overfitting.
+Imagine a huge neural network that memorizes every training example.  
 
-Now imagine a huge neural network that memorizes every training example.  
 It predicts training houses perfectly but fails on new houses.
-
+Following are some indicators of overfitting:
 - Predictions fluctuate wildly depending on the training data  
 - The model has **high variance**
 
-3. **Even a perfect model cannot predict with zero error**
+3. **It is practically impossible to predict with no error**
+In our example of house prices, even the best model cannot predict the exact sale price.
 
-Even the best model cannot predict the exact sale price.  
 Random, unpredictable factors always exist:
-
 - Sudden market shifts  
 - Unique negotiation outcomes  
 - Unmeasured features like interior design quality  
@@ -60,14 +59,6 @@ $$
 +
 \\underbrace{\\sigma^2}_{\\text{noise}}
 $$
-
-This equation explains:
-
-- Why extremely simple models fail
-- Why overly complex models fail for the opposite reason
-- Why **no model can achieve zero error**
-- Why the real goal is to find the **optimal balance**
-
 ---
 
 ### Proof
@@ -144,20 +135,20 @@ $$
 $$
 ---
 
-## Visual Intuition
+## Example
 
-Imagine aiming at a target:
+For example let us take the task of aiming at a target, these three scenarios illustrate bias, variance, and noise:
 
-🎯 **High Bias**  
-Your arrow cluster is tight but far from the center.  
-Your model is consistently wrong.
+**High Bias**  
+Our arrow cluster is tight but far from the center.  
+The model is consistently wrong.
 
-🎯 **High Variance**  
-Your arrows are scattered all over the place.  
-Your model is unpredictable.
+**High Variance**  
+Our arrows are scattered all over the place.  
+The model is unpredictable.
 
-🎯 **High Noise**  
-The target itself moves randomly.  
+**High Noise**  
+Our target itself moves randomly.  
 No model can eliminate this.
 
 The best model minimizes the **center of the spread**, not the spread alone and not the shift alone.
@@ -167,19 +158,19 @@ The best model minimizes the **center of the spread**, not the spread alone and 
 ## Some Applications
 
 1. **Deep Learning**
-- Increasing layers → lowers bias  
+- Increasing layers, this lowers bias  
 - But increases variance  
 - Early stopping, dropout, and regularization reduce variance
 
 2. **Decision Trees**
 - A deep tree overfits (high variance)  
 - A shallow tree underfits (high bias)  
-- Random forests average many trees → reduce variance  
+- Random forests average many trees, this reduces variance  
 - Gradient boosting reduces bias gradually
 
 3. **Polynomial Regression**
-- Degree 1 (line) → high bias  
-- Degree 20 → high variance  
+- Degree 1 (line) resulting in high bias  
+- Degree 20 resultinghigh variance  
 - Optimal polynomial degree balances the two
 
 4. **Hyperparameter Tuning**
