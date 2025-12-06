@@ -4,7 +4,7 @@ export default {
   title: "Activation Functions: Breathing Non-Linearity into Neural Networks",
   date: "2023-11-06",
   excerpt:
-    "A deeply intuitive and mathematically grounded walkthrough of activation functions—how they behave, why they matter, and what roles they play in modern deep learning.",
+    "A walkthrough of activation functions—how they behave, why they matter, and what roles they play in modern deep learning.",
   content: `
 Activation functions sit at the heart of how neural networks learn. Without them, a deep network—no matter how many layers it contains—would collapse into a simple linear transformation. Activation functions **inject non-linearity**, allowing networks to approximate intricate decision boundaries and complex functional relationships.
 

@@ -4,7 +4,7 @@ export default {
   title: "Understanding Matryoshka Representations",
   date: "2025-05-04",
   excerpt:
-    "A deep, intuitive walkthrough of the Matryoshka Representation Learning paper (arXiv:2205.13147), combining equations, theory, and practical PyTorch code examples.",
+    "My learnings from the Matryoshka Representation Learning paper (arXiv:2205.13147)",
   content: `
 
 **Shruti Bhosale, Zhiwei Deng, Mohammad Rastegari, Ilker Yildirim, Yair Movshovitz-Attias**  

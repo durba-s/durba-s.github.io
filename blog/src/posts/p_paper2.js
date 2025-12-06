@@ -4,7 +4,7 @@ export default {
   title: "Paper Study: Representation Transfer for Sequential Multi‑Task Linear Bandits",
   date: "2025‑11‑06",
   excerpt:
-    "A formal exploration of sequential multi-task linear bandits, detailing how low-rank representation transfer enables provably efficient learning across correlated tasks.",
+    "A understanding of sequential multi-task linear bandits, detailing how low-rank representation transfer enables provably efficient learning across correlated tasks based on (https://arxiv.org/abs/2501.13390)",
   content: `
 
 **Thang Duong, Zhi Wang, Chicheng Zhang**  

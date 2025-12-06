@@ -4,7 +4,7 @@ export default {
   title: "Bias–Variance Tradeoff Explained",
   date: "2024-11-04",
   excerpt:
-    "An intuitive and mathematical deep-dive into the Bias–Variance Tradeoff, explaining how model complexity, noise, and data variability affect learning performance.",
+    "An deep-dive into the Bias–Variance Tradeoff, explaining how model complexity, noise, and data variability affect learning performance.",
   content: `
 
 
