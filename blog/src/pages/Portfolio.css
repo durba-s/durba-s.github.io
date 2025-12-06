@@ -1,0 +1,140 @@
+/* Portfolio.css */
+
+/* Root Variables */
+:root {
+  --primary-color: #4e05fa;
+  --accent-color: #a992e0;
+  --bg-light: #ffffff;
+  --bg-dark: #0b1020;
+  --text-light: #111;
+  --text-dark: #e6eef8;
+  --card-bg: #f8f8f8;
+  --highlight-color: #a992e0;
+}
+
+/* General Layout */
+.site-wrapper {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  background: var(--bg-light);
+  color: var(--text-light);
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed; /* Freeze sidebar */
+  top: 20;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  padding: 30px 20px;
+  background-color: var(--accent-color);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  overflow: auto; /* Optional: allows sidebar scroll if content exceeds height */
+}
+
+.sidebar img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: #e6eef8;
+  margin-bottom: 12px;
+}
+
+.sidebar .name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.sidebar .subtitle {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sidebar-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.sidebar-nav a:hover {
+  color: var(--accent-color);
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 250px; /* Make space for fixed sidebar */
+  padding: 40px;
+  max-width: 900px;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 50px;
+}
+
+.section h3 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: var(--accent-color);
+}
+
+.intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Cards */
+.card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills List */
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+}
+
+/* Links */
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links ul li {
+  margin-bottom: 10px;
+}
+
+.links a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: var(--accent-color);
+}
