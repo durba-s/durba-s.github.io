@@ -2,7 +2,7 @@ export default {
   slug: "transformers-explained",
   category: "NLP",
   title: "Transformers Explained: From Motivation to Architecture",
-  date: "2025-12-04",
+  date: "2022-12-04",
   excerpt:
     "An in-depth exploration of Transformers, explaining the motivation, core mechanics, and architecture that underpin modern AI.",
   content: `

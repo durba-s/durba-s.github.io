@@ -111,7 +111,6 @@ export default function PostPage({ posts }) {
         </button>
 
         <h1>{post.title || "Untitled"}</h1>
-        <p className="post-date">{post.date || ""}</p>
 
         <ReactMarkdown
           remarkPlugins={[remarkMath, remarkGfm]}
