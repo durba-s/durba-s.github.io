@@ -19,7 +19,7 @@ export default function App() {
   const toggleTheme = () => setDark((prev) => !prev);
 
   return (
-    <Router basename={process.env.PUBLIC_URL || "/"}>
+    <Router basename={"/durba-s.github.io" || "/"}>
       <div className={dark ? "app dark" : "app"}>
         <Header
           dark={dark}
