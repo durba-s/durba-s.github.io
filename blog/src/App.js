@@ -19,7 +19,7 @@ export default function App() {
   const toggleTheme = () => setDark((prev) => !prev);
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL || "/"}>
       <div className={dark ? "app dark" : "app"}>
         <Header
           dark={dark}
@@ -41,6 +41,3 @@ export default function App() {
     </Router>
   );
 }
-//<footer className="footer">
-//          © {new Date().getFullYear()} My Blog
-//        </footer>
