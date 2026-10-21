@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
+import Navbar from "./navbar";
 
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";

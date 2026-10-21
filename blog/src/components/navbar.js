@@ -7,10 +7,14 @@ export default function Navbar() {
       <NavLink to="/" end className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>
         Portfolio
       </NavLink>
-
-      <NavLink to="/blog" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>
-        Blog
+      <NavLink to="/projects" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>
+        Projects
       </NavLink>
     </nav>
   );
 }
+/*
+<NavLink to="/blog" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>
+        Blog
+      </NavLink>
+*/

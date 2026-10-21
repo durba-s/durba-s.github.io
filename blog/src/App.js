@@ -3,11 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
 import Portfolio from "./pages/Portfolio";
-import BlogHome from "./pages/BlogHome";
-import PostPage from "./pages/PostPage";
+import Projects from "./pages/Projects"; // <-- 1. Import the Projects page
+// import BlogHome from "./pages/BlogHome";
+//import PostPage from "./pages/PostPage";
 import NotFound from "./pages/NotFound";
 
-import { loadPosts } from "./utils/postsLoader";
+// import { loadPosts } from "./utils/postsLoader";
 
 import "./styles.css";
 
@@ -15,7 +16,7 @@ export default function App() {
   const [dark, setDark] = useState(false);
   const [query, setQuery] = useState("");
 
-  const posts = loadPosts();
+  //const posts = loadPosts();
   const toggleTheme = () => setDark((prev) => !prev);
 
   return (
@@ -30,14 +31,15 @@ export default function App() {
 
         <Routes>
           <Route path="/" element={<Portfolio />} />
-          <Route
-            path="/blog"
-            element={<BlogHome posts={posts} query={query} setQuery={setQuery} />}
-          />
-          <Route path="/post/:slug" element={<PostPage posts={posts} />} />
+          <Route path="/projects" element={<Projects />} /> {/* <-- 2. Add the route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </Router>
   );
 }
+//<Route
+          //   path="/blog"
+          //   element={<BlogHome posts={posts} query={query} setQuery={setQuery} />}
+          // />
+//<Route path="/post/:slug" element={<PostPage posts={posts} />} />
